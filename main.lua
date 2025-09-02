@@ -31,4 +31,32 @@ function love.load()
 
     -- load assets
     player.image = love.graphics.newImage("assets/player.png");
+
+    -- add enemy images later .. 
+end
+
+function love.update(dt)
+    if currentState == 'exploration' then 
+        -- handle player movement
+        -- up
+        if love.keyboard.isDown("w") then
+            player.y = player.y - player.speed * dt
+        end
+        
+        -- down
+        if love.keyboard.isDown("s") then
+            player.y = player.y + player.speed * dt
+        end
+
+        -- left
+        if love.Keyboard.isDown("a") then
+            player.x = player.x - player.speed * dt
+        end
+
+        -- right 
+        if love.keyboard.isDown("d") then
+            player.x = player.x + player.speed * dt
+        end
+        
+    end
 end
