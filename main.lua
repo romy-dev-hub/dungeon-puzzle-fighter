@@ -23,3 +23,12 @@ local player = {
 local enemy = nil;  -- will be set during battle
 local map = nil;
 local encounterChance = 0.05;  -- 5% per update cycle 
+
+-- love callbacks
+function love.load()
+    -- Initialize the game world
+    map = sti("assets/dungeon_map.lua");
+
+    -- load assets
+    player.image = love.graphics.newImage("assets/player.png");
+end
