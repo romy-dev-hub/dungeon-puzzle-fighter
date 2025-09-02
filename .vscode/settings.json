@@ -1,14 +1,16 @@
 {
   "Lua.diagnostics.globals": [
     "love",
-    "map"
-],
+    "map",
+    "terrain"
+  ],
   "Lua.workspace.library": [
     "/usr/share/lua/5.1", // optional: adjust if you want standard libs
     "/usr/local/share/lua/5.1"
 ],
 "Lua.diagnostics.disable": [
-    "need-check-nil",
-    "undefined-field"
+  "need-check-nil",
+  "undefined-field",
+  "deprecated"
 ]
 }
