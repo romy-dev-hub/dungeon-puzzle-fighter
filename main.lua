@@ -1,4 +1,4 @@
-local sti = require "sti";
+local sti = require "sti.init";
 
 --game state
 local states = {
