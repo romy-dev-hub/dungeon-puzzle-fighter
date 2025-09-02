@@ -57,6 +57,20 @@ function love.update(dt)
         if love.keyboard.isDown("d") then
             player.x = player.x + player.speed * dt
         end
-        
+
+        -- Random encounter (problem: make it based on steps, not time)
+       -- if math.random() < encounterChance then
+       --     startBattle()
+      --  end
+
+        -- Update map camera to follow player
+      --  map:update(dt)
+
+    -- elseif currentState == 'battle' then
+        -- Battle logic: Present puzzle, check solve, apply damage
+        -- Placeholder: Press space to "solve" and end battle
+       -- if love.keyboard.isDown('space') then
+        --    resolveBattle(true)  -- True = player wins
+       -- end
     end
 end
