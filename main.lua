@@ -74,3 +74,11 @@ function love.update(dt)
        -- end
     end
 end
+
+function love.draw()
+
+    -- draw the map and player
+    map:draw(-player.x + love.graphics.getWidth() / 2, -player.y + love.graphics.getHeight() / 2)
+    love.graphics.draw(player.image, player.x, player.y)
+
+end
