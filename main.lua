@@ -27,7 +27,7 @@ local encounterChance = 0.05;  -- 5% per update cycle
 -- love callbacks
 function love.load()
     -- Initialize the game world
-    map = sti("assets/dungeon_map.lua");
+    map = sti("assets/dungeon_map_1.lua");
 
     -- load assets
     player.image = love.graphics.newImage("assets/player.png");
